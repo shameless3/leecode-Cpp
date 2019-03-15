@@ -5,4 +5,18 @@
 ### 001 两数之和  [001.cpp](https://github.com/shameless3/leecode-Cpp/blob/master/001.cpp)  难度:easy
 利用unordered_map创造哈希表，用数组中的值作Key，在数组中的位置作value达到O（n）的复杂度
 ### 002 两数相加  [002.cpp](https://github.com/shameless3/leecode-Cpp/blob/master/002.cpp)  难度:middle
-### 003 无重复字符的最长子串 [003.cpp](https://github.com/shameless3/leecode-Cpp/blob/master/003.cpp) 难度：middle
+题目本身没什么难度，按要求相加注意最后一次可能会有进位即可，可以利用？：的表达式简化语句
+```
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+ ```  
+ 题目中结构体中的LisNode(int x)目前我认为是在使用new方法时可以加入的参数x并进行相关初始化，日后查到会补充  
+### 003 无重复字符的最长子串 [003.cpp](https://github.com/shameless3/leecode-Cpp/blob/master/003.cpp) 难度：middle  
+本题利用unordered_map创建哈希表，将字符存储为key，字符对应在字符串中的位置存储为value  
+通过判断新字符在哈希表中是否存在并移动起始位置达到只需要遍历一遍的目的
